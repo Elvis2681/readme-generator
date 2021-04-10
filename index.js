@@ -60,9 +60,8 @@ inquirer
         if (err) throw err;
         })
         fs.appendFileSync("testReadme.md",`## Table Of Contents\n- [Descripton](#Description)\n- [Installation Instructions](#Installation-Instructions)\n- [Usage Information](#Usage-Information)\n- [Contritbution Guidelines](#Contritbution-Guidelines)\n- [Test Instructions](#Test-Instructions)\n- [Contact](#Contact)\n`,(err) => {
-            if (err) throw err;
+        if (err) throw err;
         })
-
        fs.appendFileSync("testReadme.md",`## Description\n${answer.Description}\n`, (err) => {
         if (err) throw err;
        })
